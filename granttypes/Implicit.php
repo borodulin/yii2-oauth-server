@@ -9,6 +9,12 @@ namespace conquer\oauth2\granttypes;
 
 class Implicit extends GrantTypeAbstract
 {
+    public $client_id;
+    public $response_type;
+    public $state;
+    public $redirect_uri;
+    public $scope;
+
     public function rules()
     {
         return [
@@ -22,14 +28,14 @@ class Implicit extends GrantTypeAbstract
     
     public function getResponseData()
     {
-        $acessToken = AccessToken::createAccessToken([
+        $acessToken = \conquer\oauth2\models\AccessToken::createAccessToken([
             'client_id' => $this->client_id,
             'user_id' => \Yii::$app->user->id,
             'expires' => $this->accessTokenLifetime + time(),
             'scope' => $this->scope,
         ]);
     
-        $refreshToken = RefreshToken::createRefreshToken([
+        $refreshToken = \conquer\oauth2\models\RefreshToken::createRefreshToken([
             'client_id' => $this->client_id,
             'user_id' => \Yii::$app->user->id,
             'expires' => $this->refreshTokenLifetime + time(),

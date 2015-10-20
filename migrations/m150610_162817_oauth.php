@@ -22,6 +22,7 @@ class m150610_162817_oauth extends Migration
                 'client_id' => Schema::TYPE_STRING . '(80) NOT NULL',
                 'client_secret' => Schema::TYPE_STRING . '(80) NOT NULL',
                 'redirect_uri' => Schema::TYPE_TEXT . ' NOT NULL',
+                'user_id' => Schema::TYPE_INTEGER . ' NOT NULL',
                 'grant_type' => Schema::TYPE_TEXT,
                 'scope' => Schema::TYPE_TEXT,                
                 'created_at' => Schema::TYPE_INTEGER . ' NOT NULL',

@@ -8,7 +8,6 @@
 namespace conquer\oauth2\models;
 
 use conquer\oauth2\Exception;
-use yii\helpers\VarDumper;
 use yii\db\ActiveRecord;
 
 /**
@@ -72,13 +71,13 @@ class AccessToken extends \yii\db\ActiveRecord
         
         $attributes['access_token'] = \Yii::$app->security->generateRandomString(40);
         $accessToken = new static($attributes);
-
+        $accessToken->user_id = $accessToken->client->user_id;
         if ($accessToken->save()) {
             return $accessToken;
         } else {
-            \Yii::error(__CLASS__. ' validation error:'. VarDumper::dumpAsString($accessToken->errors));
+            \Yii::error(__CLASS__. ' validation error:'. print_r($accessToken->errors, true));
         }
-        throw new Exception('Unable to create access token', Exception::INTERNAL_ERROR);
+        throw new Exception('Unable to create access token', \conquer\oauth2\Exception::INTERNAL_ERROR);
     }
     
     /**
