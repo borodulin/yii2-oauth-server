@@ -26,7 +26,7 @@ class Exception extends \yii\base\UserException
     const UNAUTHORIZED_CLIENT = 'unauthorized_client';
     const UNSUPPORTED_GRANT_TYPE = 'unsupported_grant_type';
     const UNSUPPORTED_RESPONSE_TYPE = 'unsupported_response_type';
-    
+    const INTERNAL_ERROR = "internal error";
     const NOT_IMPLEMENTED = 'not_implemented';
     
         
