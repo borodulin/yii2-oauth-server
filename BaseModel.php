@@ -2,9 +2,10 @@
 
 namespace conquer\oauth2;
 
+use conquer\oauth2\models\Client;
 use yii\base\Model;
 use yii\helpers\ArrayHelper;
-use conquer\oauth2\models\Client;
+use yii\web\Request;
 
 /**
  * @property Client $client
@@ -75,9 +76,8 @@ abstract class BaseModel extends Model
 
     abstract public function getResponseData();
 
-    public static function getRequestValue($param, $header = null)
+    public static function getRequestValue($param, $header = null, Request $request = null)
     {
-        static $request;
         if (is_null($request)) {
             $request = \Yii::$app->request;
         }

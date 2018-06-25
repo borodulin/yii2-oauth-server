@@ -29,9 +29,15 @@
             "conquer\\oauth2\\": ""
         }
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
     "extra": {
         "branch-alias": {
-            "dev-master": "1.5.0-dev"
+            "dev-master": "1.6.0-dev"
         }
     },
     "repositories": [
