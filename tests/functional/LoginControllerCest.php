@@ -91,5 +91,4 @@ class LoginControllerCest
         $I->fillField('LoginForm[password]', 'correct');
         $I->click('Login');
     }
-    
 }

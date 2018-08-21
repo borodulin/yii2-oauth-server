@@ -21,12 +21,13 @@ variables:
 
 
 stages:
-  - phpcs
   - test
+  - phpcs
 
 phpcs:
   stage: phpcs
   image: willhallonline/yii-phpcs:alpine
+  allow_failure: true
   script:
     - phpcs ./src
 
