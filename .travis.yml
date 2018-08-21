@@ -5,8 +5,12 @@ php:
   - '7.1'
   - '7.2'
 
+before_install:
+  - mysql -e 'CREATE DATABASE myapp_test;'
+
 install:
     - composer install --no-interaction
+    - tests/_app/yii migrate up --interactive=0
 
 script:
     - vendor/bin/phpcs --standard=vendor/yiisoft/yii2-coding-standards/Yii2 --extensions=php --ignore=vendor,granttypes/RefreshToken.php .

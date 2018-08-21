@@ -1,0 +1,55 @@
+.test-shared: &test-shared
+  # Select what we should cache between builds
+  cache:
+    key: "$CI_JOB_NAME"
+    paths:
+      - vendor/
+      - $XDG_CACHE_HOME/composer
+  stage: test
+  before_script:
+    - if [[ ! -z $COMPOSER_AUTH_JSON ]] ; then mkdir -p /root/.composer ; echo $COMPOSER_AUTH_JSON > ~/.composer/auth.json ; fi
+    - composer install --prefer-dist
+    - php tests/_app/yii migrate --interactive=0
+  services:
+    - mysql:5.6
+
+# Set any variables we need
+variables:
+  # Configure mysql environment variables (https://hub.docker.com/r/_/mysql/)
+  MYSQL_DATABASE: test_oauth
+  MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+
+
+stages:
+  - phpcs
+  - test
+
+phpcs:
+  stage: phpcs
+  image: willhallonline/yii-phpcs:alpine
+  script:
+    - phpcs ./src
+
+test:5.6:
+  <<: *test-shared
+  image: mikk150/yii2-base:5.6
+  script:
+    - vendor/bin/codecept run --no-colors
+
+test:7.0:
+  <<: *test-shared
+  image: mikk150/yii2-base:7.0
+  script:
+    - vendor/bin/codecept run --no-colors
+
+test:7.1:
+  <<: *test-shared
+  image: mikk150/yii2-base:7.1
+  script:
+    - vendor/bin/codecept run --no-colors
+
+test:7.2:
+  <<: *test-shared
+  image: registry.gitlab.com/traffic_control_v2/docker_traffic_control_v2:7.2
+  script:
+    - vendor/bin/codecept run --no-colors

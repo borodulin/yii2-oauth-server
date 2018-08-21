@@ -52,7 +52,7 @@ class AuthorizeFilter extends ActionFilter
     public function beforeAction($action)
     {
         if (!$responseType = BaseModel::getRequestValue('response_type')) {
-            throw new Exception('Invalid or missing response type');
+            throw new Exception('Invalid or missing response type.');
         }
         if (isset($this->responseTypes[$responseType])) {
             $this->_responseType = Yii::createObject($this->responseTypes[$responseType]);

@@ -96,10 +96,10 @@ abstract class BaseModel extends Model
     {
         if (is_null($this->_client)) {
             if (empty($this->client_id)) {
-                $this->errorServer('Unknown client', Exception::INVALID_CLIENT);
+                $this->errorServer('Unknown client.', Exception::INVALID_CLIENT);
             }
             if (!$this->_client = Client::findOne(['client_id' => $this->client_id])) {
-                $this->errorServer('Unknown client', Exception::INVALID_CLIENT);
+                $this->errorServer('Unknown client.', Exception::INVALID_CLIENT);
             }
         }
         return $this->_client;

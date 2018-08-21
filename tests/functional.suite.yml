@@ -8,4 +8,6 @@
 actor: FunctionalTester
 modules:
     enabled:
+        - Yii2:
+            configFile: 'tests/_app/config/web.php'
         # add a framework module here

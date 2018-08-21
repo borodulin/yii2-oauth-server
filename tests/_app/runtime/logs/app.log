@@ -1,0 +1,1410 @@
+2018-08-21 14:25:31 [-][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'app\controllers\TestController' in file: /home/mikk/test/yii2-oauth2-server/tests/_app/controllers/TestController.php. Namespace missing?' in /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(280): class_exists('app\\controllers...')
+#3 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(258): yii\console\controllers\HelpController->validateControllerClass('app\\controllers...')
+#4 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(175): yii\console\controllers\HelpController->getModuleCommands(Object(yii\console\Application))
+#5 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(187): yii\console\controllers\HelpController->getCommands()
+#6 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(293): yii\console\controllers\HelpController->getCommandDescriptions()
+#7 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(67): yii\console\controllers\HelpController->getDefaultHelp()
+#8 [internal function]: yii\console\controllers\HelpController->actionIndex(NULL)
+#9 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#12 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#13 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('', Array)
+#14 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('', Array)
+#15 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/mikk/test/yii2-oauth2-server/tests/_app/yii(20): yii\base\Application->run()
+#17 {main}
+2018-08-21 14:25:31 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_VTNR' => '7'
+    'LC_PAPER' => 'et_EE.UTF-8'
+    '__GIT_PROMPT_IGNORE_STASH' => ''
+    'LC_ADDRESS' => 'et_EE.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/mikk'
+    'LC_MONETARY' => 'et_EE.UTF-8'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'SESSION' => 'ubuntu'
+    'GIO_LAUNCHED_DESKTOP_FILE_PID' => '4532'
+    'GPG_AGENT_INFO' => '/home/mikk/.gnupg/S.gpg-agent:0:1'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'et_EE.UTF-8'
+    'OLDPWD' => '/home/mikk/test'
+    'UPSTART_SESSION' => 'unix:abstract=/com/ubuntu/upstart-session/1000/3804'
+    'GNOME_KEYRING_CONTROL' => ''
+    'GTK_MODULES' => 'gail:atk-bridge:unity-gtk-module'
+    '__GIT_PROMPT_SHOW_UPSTREAM' => ''
+    '__GIT_PROMPT_SHOW_UNTRACKED_FILES' => 'all'
+    'USER' => 'mikk'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_TELEPHONE' => 'et_EE.UTF-8'
+    'DESKTOP_AUTOSTART_ID' => '10dc78bccab633525c153484358187422500000042390003'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DEFAULTS_PATH' => '/usr/share/gconf/ubuntu.default.path'
+    'SESSION_MANAGER' => 'local/mikk-traffic:@/tmp/.ICE-unix/4239,unix/mikk-traffic:/tmp/.ICE-unix/4239'
+    'LIBVIRT_DEFAULT_URI' => 'qemu:///system'
+    'GIO_LAUNCHED_DESKTOP_FILE' => '/home/mikk/.config/autostart/guake.desktop'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg'
+    'DESKTOP_SESSION' => 'ubuntu'
+    'PATH' => '/home/mikk/.config/composer/vendor/bin:/home/mikk/bin:/home/mikk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'QT_IM_MODULE' => 'ibus'
+    'QT_QPA_PLATFORMTHEME' => 'appmenu-qt5'
+    'LC_IDENTIFICATION' => 'et_EE.UTF-8'
+    'XDG_SESSION_TYPE' => 'x11'
+    'PWD' => '/home/mikk/test/yii2-oauth2-server'
+    'JOB' => 'dbus'
+    'XMODIFIERS' => '@im=ibus'
+    'GNOME_KEYRING_PID' => ''
+    'LANG' => 'en_US.UTF-8'
+    'GDM_LANG' => 'en_US'
+    'MANDATORY_PATH' => '/usr/share/gconf/ubuntu.mandatory.path'
+    'LC_MEASUREMENT' => 'et_EE.UTF-8'
+    'COMPIZ_CONFIG_PROFILE' => 'ubuntu'
+    'IM_CONFIG_PHASE' => '1'
+    'GDMSESSION' => 'ubuntu'
+    'SESSIONTYPE' => 'gnome-session'
+    'GTK2_MODULES' => 'overlay-scrollbar'
+    'SHLVL' => '1'
+    'HOME' => '/home/mikk'
+    'XDG_SEAT' => 'seat0'
+    'LANGUAGE' => 'en_US'
+    'GIT_BRANCH' => 'add_tests'
+    '__GIT_PROMPT_SHOW_CHANGED_FILES_COUNT' => '1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'XDG_SESSION_DESKTOP' => 'ubuntu'
+    'LOGNAME' => 'mikk'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-ijw3vJ9dt2'
+    'XDG_DATA_DIRS' => '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop'
+    'QT4_IM_MODULE' => 'xim'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'GUAKE_TAB_UUID' => '7361a48a-f21a-479d-8062-b376a283df69'
+    'INSTANCE' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'XDG_CURRENT_DESKTOP' => 'Unity'
+    'GTK_IM_MODULE' => 'ibus'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'et_EE.UTF-8'
+    'LC_NAME' => 'et_EE.UTF-8'
+    'XAUTHORITY' => '/home/mikk/.Xauthority'
+    '_' => 'tests/_app/yii'
+    'PHP_SELF' => 'tests/_app/yii'
+    'SCRIPT_NAME' => 'tests/_app/yii'
+    'SCRIPT_FILENAME' => 'tests/_app/yii'
+    'PATH_TRANSLATED' => 'tests/_app/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534861531.5524
+    'REQUEST_TIME' => 1534861531
+    'argv' => [
+        0 => 'tests/_app/yii'
+    ]
+    'argc' => 1
+]
+2018-08-21 14:25:44 [-][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'app\controllers\TestController' in file: /home/mikk/test/yii2-oauth2-server/tests/_app/controllers/TestController.php. Namespace missing?' in /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(280): class_exists('app\\controllers...')
+#3 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(258): yii\console\controllers\HelpController->validateControllerClass('app\\controllers...')
+#4 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(175): yii\console\controllers\HelpController->getModuleCommands(Object(yii\console\Application))
+#5 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(187): yii\console\controllers\HelpController->getCommands()
+#6 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(293): yii\console\controllers\HelpController->getCommandDescriptions()
+#7 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(67): yii\console\controllers\HelpController->getDefaultHelp()
+#8 [internal function]: yii\console\controllers\HelpController->actionIndex(NULL)
+#9 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#12 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#13 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('', Array)
+#14 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('', Array)
+#15 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/mikk/test/yii2-oauth2-server/tests/_app/yii(20): yii\base\Application->run()
+#17 {main}
+2018-08-21 14:25:44 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_VTNR' => '7'
+    'LC_PAPER' => 'et_EE.UTF-8'
+    '__GIT_PROMPT_IGNORE_STASH' => ''
+    'LC_ADDRESS' => 'et_EE.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/mikk'
+    'LC_MONETARY' => 'et_EE.UTF-8'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'SESSION' => 'ubuntu'
+    'GIO_LAUNCHED_DESKTOP_FILE_PID' => '4532'
+    'GPG_AGENT_INFO' => '/home/mikk/.gnupg/S.gpg-agent:0:1'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'et_EE.UTF-8'
+    'OLDPWD' => '/home/mikk/test'
+    'UPSTART_SESSION' => 'unix:abstract=/com/ubuntu/upstart-session/1000/3804'
+    'GNOME_KEYRING_CONTROL' => ''
+    'GTK_MODULES' => 'gail:atk-bridge:unity-gtk-module'
+    '__GIT_PROMPT_SHOW_UPSTREAM' => ''
+    '__GIT_PROMPT_SHOW_UNTRACKED_FILES' => 'all'
+    'USER' => 'mikk'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_TELEPHONE' => 'et_EE.UTF-8'
+    'DESKTOP_AUTOSTART_ID' => '10dc78bccab633525c153484358187422500000042390003'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DEFAULTS_PATH' => '/usr/share/gconf/ubuntu.default.path'
+    'SESSION_MANAGER' => 'local/mikk-traffic:@/tmp/.ICE-unix/4239,unix/mikk-traffic:/tmp/.ICE-unix/4239'
+    'LIBVIRT_DEFAULT_URI' => 'qemu:///system'
+    'GIO_LAUNCHED_DESKTOP_FILE' => '/home/mikk/.config/autostart/guake.desktop'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg'
+    'DESKTOP_SESSION' => 'ubuntu'
+    'PATH' => '/home/mikk/.config/composer/vendor/bin:/home/mikk/bin:/home/mikk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'QT_IM_MODULE' => 'ibus'
+    'QT_QPA_PLATFORMTHEME' => 'appmenu-qt5'
+    'LC_IDENTIFICATION' => 'et_EE.UTF-8'
+    'XDG_SESSION_TYPE' => 'x11'
+    'PWD' => '/home/mikk/test/yii2-oauth2-server'
+    'JOB' => 'dbus'
+    'XMODIFIERS' => '@im=ibus'
+    'GNOME_KEYRING_PID' => ''
+    'LANG' => 'en_US.UTF-8'
+    'GDM_LANG' => 'en_US'
+    'MANDATORY_PATH' => '/usr/share/gconf/ubuntu.mandatory.path'
+    'LC_MEASUREMENT' => 'et_EE.UTF-8'
+    'COMPIZ_CONFIG_PROFILE' => 'ubuntu'
+    'IM_CONFIG_PHASE' => '1'
+    'GDMSESSION' => 'ubuntu'
+    'SESSIONTYPE' => 'gnome-session'
+    'GTK2_MODULES' => 'overlay-scrollbar'
+    'SHLVL' => '1'
+    'HOME' => '/home/mikk'
+    'XDG_SEAT' => 'seat0'
+    'LANGUAGE' => 'en_US'
+    'GIT_BRANCH' => 'add_tests'
+    '__GIT_PROMPT_SHOW_CHANGED_FILES_COUNT' => '1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'XDG_SESSION_DESKTOP' => 'ubuntu'
+    'LOGNAME' => 'mikk'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-ijw3vJ9dt2'
+    'XDG_DATA_DIRS' => '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop'
+    'QT4_IM_MODULE' => 'xim'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'GUAKE_TAB_UUID' => '7361a48a-f21a-479d-8062-b376a283df69'
+    'INSTANCE' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'XDG_CURRENT_DESKTOP' => 'Unity'
+    'GTK_IM_MODULE' => 'ibus'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'et_EE.UTF-8'
+    'LC_NAME' => 'et_EE.UTF-8'
+    'XAUTHORITY' => '/home/mikk/.Xauthority'
+    '_' => 'tests/_app/yii'
+    'PHP_SELF' => 'tests/_app/yii'
+    'SCRIPT_NAME' => 'tests/_app/yii'
+    'SCRIPT_FILENAME' => 'tests/_app/yii'
+    'PATH_TRANSLATED' => 'tests/_app/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534861544.9125
+    'REQUEST_TIME' => 1534861544
+    'argv' => [
+        0 => 'tests/_app/yii'
+    ]
+    'argc' => 1
+]
+2018-08-21 14:26:01 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#6 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#8 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#18 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#19 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 /home/mikk/test/yii2-oauth2-server/tests/_app/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#6 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#16 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#17 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /home/mikk/test/yii2-oauth2-server/tests/_app/yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2018-08-21 14:26:01 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_VTNR' => '7'
+    'LC_PAPER' => 'et_EE.UTF-8'
+    '__GIT_PROMPT_IGNORE_STASH' => ''
+    'LC_ADDRESS' => 'et_EE.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/mikk'
+    'LC_MONETARY' => 'et_EE.UTF-8'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'SESSION' => 'ubuntu'
+    'GIO_LAUNCHED_DESKTOP_FILE_PID' => '4532'
+    'GPG_AGENT_INFO' => '/home/mikk/.gnupg/S.gpg-agent:0:1'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'et_EE.UTF-8'
+    'OLDPWD' => '/home/mikk/test'
+    'UPSTART_SESSION' => 'unix:abstract=/com/ubuntu/upstart-session/1000/3804'
+    'GNOME_KEYRING_CONTROL' => ''
+    'GTK_MODULES' => 'gail:atk-bridge:unity-gtk-module'
+    '__GIT_PROMPT_SHOW_UPSTREAM' => ''
+    '__GIT_PROMPT_SHOW_UNTRACKED_FILES' => 'all'
+    'USER' => 'mikk'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_TELEPHONE' => 'et_EE.UTF-8'
+    'DESKTOP_AUTOSTART_ID' => '10dc78bccab633525c153484358187422500000042390003'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DEFAULTS_PATH' => '/usr/share/gconf/ubuntu.default.path'
+    'SESSION_MANAGER' => 'local/mikk-traffic:@/tmp/.ICE-unix/4239,unix/mikk-traffic:/tmp/.ICE-unix/4239'
+    'LIBVIRT_DEFAULT_URI' => 'qemu:///system'
+    'GIO_LAUNCHED_DESKTOP_FILE' => '/home/mikk/.config/autostart/guake.desktop'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg'
+    'DESKTOP_SESSION' => 'ubuntu'
+    'PATH' => '/home/mikk/.config/composer/vendor/bin:/home/mikk/bin:/home/mikk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'QT_IM_MODULE' => 'ibus'
+    'QT_QPA_PLATFORMTHEME' => 'appmenu-qt5'
+    'LC_IDENTIFICATION' => 'et_EE.UTF-8'
+    'XDG_SESSION_TYPE' => 'x11'
+    'PWD' => '/home/mikk/test/yii2-oauth2-server'
+    'JOB' => 'dbus'
+    'XMODIFIERS' => '@im=ibus'
+    'GNOME_KEYRING_PID' => ''
+    'LANG' => 'en_US.UTF-8'
+    'GDM_LANG' => 'en_US'
+    'MANDATORY_PATH' => '/usr/share/gconf/ubuntu.mandatory.path'
+    'LC_MEASUREMENT' => 'et_EE.UTF-8'
+    'COMPIZ_CONFIG_PROFILE' => 'ubuntu'
+    'IM_CONFIG_PHASE' => '1'
+    'GDMSESSION' => 'ubuntu'
+    'SESSIONTYPE' => 'gnome-session'
+    'GTK2_MODULES' => 'overlay-scrollbar'
+    'SHLVL' => '1'
+    'HOME' => '/home/mikk'
+    'XDG_SEAT' => 'seat0'
+    'LANGUAGE' => 'en_US'
+    'GIT_BRANCH' => 'add_tests'
+    '__GIT_PROMPT_SHOW_CHANGED_FILES_COUNT' => '1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'XDG_SESSION_DESKTOP' => 'ubuntu'
+    'LOGNAME' => 'mikk'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-ijw3vJ9dt2'
+    'XDG_DATA_DIRS' => '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop'
+    'QT4_IM_MODULE' => 'xim'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'GUAKE_TAB_UUID' => '7361a48a-f21a-479d-8062-b376a283df69'
+    'INSTANCE' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'XDG_CURRENT_DESKTOP' => 'Unity'
+    'GTK_IM_MODULE' => 'ibus'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'et_EE.UTF-8'
+    'LC_NAME' => 'et_EE.UTF-8'
+    'XAUTHORITY' => '/home/mikk/.Xauthority'
+    '_' => 'tests/_app/yii'
+    'PHP_SELF' => 'tests/_app/yii'
+    'SCRIPT_NAME' => 'tests/_app/yii'
+    'SCRIPT_FILENAME' => 'tests/_app/yii'
+    'PATH_TRANSLATED' => 'tests/_app/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534861561.1808
+    'REQUEST_TIME' => 1534861561
+    'argv' => [
+        0 => 'tests/_app/yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-08-21 14:30:09 [-][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Object configuration must be an array containing a "class" element.' in /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/BaseYii.php:353
+Stack trace:
+#0 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Module.php(583): yii\BaseYii::createObject(Array, Array)
+#1 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('migrate')
+#2 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#3 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#4 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#5 /home/mikk/test/yii2-oauth2-server/tests/_app/yii(20): yii\base\Application->run()
+#6 {main}
+2018-08-21 14:30:09 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_VTNR' => '7'
+    'LC_PAPER' => 'et_EE.UTF-8'
+    '__GIT_PROMPT_IGNORE_STASH' => ''
+    'LC_ADDRESS' => 'et_EE.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/mikk'
+    'LC_MONETARY' => 'et_EE.UTF-8'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'SESSION' => 'ubuntu'
+    'GIO_LAUNCHED_DESKTOP_FILE_PID' => '4532'
+    'GPG_AGENT_INFO' => '/home/mikk/.gnupg/S.gpg-agent:0:1'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'et_EE.UTF-8'
+    'OLDPWD' => '/home/mikk/test'
+    'UPSTART_SESSION' => 'unix:abstract=/com/ubuntu/upstart-session/1000/3804'
+    'GNOME_KEYRING_CONTROL' => ''
+    'GTK_MODULES' => 'gail:atk-bridge:unity-gtk-module'
+    '__GIT_PROMPT_SHOW_UPSTREAM' => ''
+    '__GIT_PROMPT_SHOW_UNTRACKED_FILES' => 'all'
+    'USER' => 'mikk'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_TELEPHONE' => 'et_EE.UTF-8'
+    'DESKTOP_AUTOSTART_ID' => '10dc78bccab633525c153484358187422500000042390003'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DEFAULTS_PATH' => '/usr/share/gconf/ubuntu.default.path'
+    'SESSION_MANAGER' => 'local/mikk-traffic:@/tmp/.ICE-unix/4239,unix/mikk-traffic:/tmp/.ICE-unix/4239'
+    'LIBVIRT_DEFAULT_URI' => 'qemu:///system'
+    'GIO_LAUNCHED_DESKTOP_FILE' => '/home/mikk/.config/autostart/guake.desktop'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg'
+    'DESKTOP_SESSION' => 'ubuntu'
+    'PATH' => '/home/mikk/.config/composer/vendor/bin:/home/mikk/bin:/home/mikk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'QT_IM_MODULE' => 'ibus'
+    'QT_QPA_PLATFORMTHEME' => 'appmenu-qt5'
+    'LC_IDENTIFICATION' => 'et_EE.UTF-8'
+    'XDG_SESSION_TYPE' => 'x11'
+    'PWD' => '/home/mikk/test/yii2-oauth2-server'
+    'JOB' => 'dbus'
+    'XMODIFIERS' => '@im=ibus'
+    'GNOME_KEYRING_PID' => ''
+    'LANG' => 'en_US.UTF-8'
+    'GDM_LANG' => 'en_US'
+    'MANDATORY_PATH' => '/usr/share/gconf/ubuntu.mandatory.path'
+    'LC_MEASUREMENT' => 'et_EE.UTF-8'
+    'COMPIZ_CONFIG_PROFILE' => 'ubuntu'
+    'IM_CONFIG_PHASE' => '1'
+    'GDMSESSION' => 'ubuntu'
+    'SESSIONTYPE' => 'gnome-session'
+    'GTK2_MODULES' => 'overlay-scrollbar'
+    'SHLVL' => '1'
+    'HOME' => '/home/mikk'
+    'XDG_SEAT' => 'seat0'
+    'LANGUAGE' => 'en_US'
+    'GIT_BRANCH' => 'add_tests'
+    '__GIT_PROMPT_SHOW_CHANGED_FILES_COUNT' => '1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'XDG_SESSION_DESKTOP' => 'ubuntu'
+    'LOGNAME' => 'mikk'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-ijw3vJ9dt2'
+    'XDG_DATA_DIRS' => '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop'
+    'QT4_IM_MODULE' => 'xim'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'GUAKE_TAB_UUID' => '7361a48a-f21a-479d-8062-b376a283df69'
+    'INSTANCE' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'XDG_CURRENT_DESKTOP' => 'Unity'
+    'GTK_IM_MODULE' => 'ibus'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'et_EE.UTF-8'
+    'LC_NAME' => 'et_EE.UTF-8'
+    'XAUTHORITY' => '/home/mikk/.Xauthority'
+    '_' => 'tests/_app/yii'
+    'PHP_SELF' => 'tests/_app/yii'
+    'SCRIPT_NAME' => 'tests/_app/yii'
+    'SCRIPT_FILENAME' => 'tests/_app/yii'
+    'PATH_TRANSLATED' => 'tests/_app/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534861809.9683
+    'REQUEST_TIME' => 1534861809
+    'argv' => [
+        0 => 'tests/_app/yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-08-21 14:30:36 [-][-][-][error][yii\base\InvalidArgumentException] exception 'yii\base\InvalidArgumentException' with message 'Invalid path alias: @conquer/oauth2/src/migrations' in /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/BaseYii.php:154
+Stack trace:
+#0 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(127): yii\BaseYii::getAlias('@conquer/oauth2...')
+#1 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/MigrateController.php(181): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Controller.php(155): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#3 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#4 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#5 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#6 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#7 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 /home/mikk/test/yii2-oauth2-server/tests/_app/yii(20): yii\base\Application->run()
+#9 {main}
+2018-08-21 14:30:36 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_VTNR' => '7'
+    'LC_PAPER' => 'et_EE.UTF-8'
+    '__GIT_PROMPT_IGNORE_STASH' => ''
+    'LC_ADDRESS' => 'et_EE.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/mikk'
+    'LC_MONETARY' => 'et_EE.UTF-8'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'SESSION' => 'ubuntu'
+    'GIO_LAUNCHED_DESKTOP_FILE_PID' => '4532'
+    'GPG_AGENT_INFO' => '/home/mikk/.gnupg/S.gpg-agent:0:1'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'et_EE.UTF-8'
+    'OLDPWD' => '/home/mikk/test'
+    'UPSTART_SESSION' => 'unix:abstract=/com/ubuntu/upstart-session/1000/3804'
+    'GNOME_KEYRING_CONTROL' => ''
+    'GTK_MODULES' => 'gail:atk-bridge:unity-gtk-module'
+    '__GIT_PROMPT_SHOW_UPSTREAM' => ''
+    '__GIT_PROMPT_SHOW_UNTRACKED_FILES' => 'all'
+    'USER' => 'mikk'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_TELEPHONE' => 'et_EE.UTF-8'
+    'DESKTOP_AUTOSTART_ID' => '10dc78bccab633525c153484358187422500000042390003'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DEFAULTS_PATH' => '/usr/share/gconf/ubuntu.default.path'
+    'SESSION_MANAGER' => 'local/mikk-traffic:@/tmp/.ICE-unix/4239,unix/mikk-traffic:/tmp/.ICE-unix/4239'
+    'LIBVIRT_DEFAULT_URI' => 'qemu:///system'
+    'GIO_LAUNCHED_DESKTOP_FILE' => '/home/mikk/.config/autostart/guake.desktop'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg'
+    'DESKTOP_SESSION' => 'ubuntu'
+    'PATH' => '/home/mikk/.config/composer/vendor/bin:/home/mikk/bin:/home/mikk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'QT_IM_MODULE' => 'ibus'
+    'QT_QPA_PLATFORMTHEME' => 'appmenu-qt5'
+    'LC_IDENTIFICATION' => 'et_EE.UTF-8'
+    'XDG_SESSION_TYPE' => 'x11'
+    'PWD' => '/home/mikk/test/yii2-oauth2-server'
+    'JOB' => 'dbus'
+    'XMODIFIERS' => '@im=ibus'
+    'GNOME_KEYRING_PID' => ''
+    'LANG' => 'en_US.UTF-8'
+    'GDM_LANG' => 'en_US'
+    'MANDATORY_PATH' => '/usr/share/gconf/ubuntu.mandatory.path'
+    'LC_MEASUREMENT' => 'et_EE.UTF-8'
+    'COMPIZ_CONFIG_PROFILE' => 'ubuntu'
+    'IM_CONFIG_PHASE' => '1'
+    'GDMSESSION' => 'ubuntu'
+    'SESSIONTYPE' => 'gnome-session'
+    'GTK2_MODULES' => 'overlay-scrollbar'
+    'SHLVL' => '1'
+    'HOME' => '/home/mikk'
+    'XDG_SEAT' => 'seat0'
+    'LANGUAGE' => 'en_US'
+    'GIT_BRANCH' => 'add_tests'
+    '__GIT_PROMPT_SHOW_CHANGED_FILES_COUNT' => '1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'XDG_SESSION_DESKTOP' => 'ubuntu'
+    'LOGNAME' => 'mikk'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-ijw3vJ9dt2'
+    'XDG_DATA_DIRS' => '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop'
+    'QT4_IM_MODULE' => 'xim'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'GUAKE_TAB_UUID' => '7361a48a-f21a-479d-8062-b376a283df69'
+    'INSTANCE' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'XDG_CURRENT_DESKTOP' => 'Unity'
+    'GTK_IM_MODULE' => 'ibus'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'et_EE.UTF-8'
+    'LC_NAME' => 'et_EE.UTF-8'
+    'XAUTHORITY' => '/home/mikk/.Xauthority'
+    '_' => 'tests/_app/yii'
+    'PHP_SELF' => 'tests/_app/yii'
+    'SCRIPT_NAME' => 'tests/_app/yii'
+    'SCRIPT_FILENAME' => 'tests/_app/yii'
+    'PATH_TRANSLATED' => 'tests/_app/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534861836.6244
+    'REQUEST_TIME' => 1534861836
+    'argv' => [
+        0 => 'tests/_app/yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-08-21 14:30:48 [-][-][-][error][yii\base\InvalidArgumentException] exception 'yii\base\InvalidArgumentException' with message 'Invalid path alias: @conquer/oauth2/src/migrations' in /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/BaseYii.php:154
+Stack trace:
+#0 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(127): yii\BaseYii::getAlias('@conquer/oauth2...')
+#1 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/MigrateController.php(181): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Controller.php(155): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#3 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#4 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#5 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#6 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#7 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 /home/mikk/test/yii2-oauth2-server/tests/_app/yii(20): yii\base\Application->run()
+#9 {main}
+2018-08-21 14:30:48 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_VTNR' => '7'
+    'LC_PAPER' => 'et_EE.UTF-8'
+    '__GIT_PROMPT_IGNORE_STASH' => ''
+    'LC_ADDRESS' => 'et_EE.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/mikk'
+    'LC_MONETARY' => 'et_EE.UTF-8'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'SESSION' => 'ubuntu'
+    'GIO_LAUNCHED_DESKTOP_FILE_PID' => '4532'
+    'GPG_AGENT_INFO' => '/home/mikk/.gnupg/S.gpg-agent:0:1'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'et_EE.UTF-8'
+    'OLDPWD' => '/home/mikk/test'
+    'UPSTART_SESSION' => 'unix:abstract=/com/ubuntu/upstart-session/1000/3804'
+    'GNOME_KEYRING_CONTROL' => ''
+    'GTK_MODULES' => 'gail:atk-bridge:unity-gtk-module'
+    '__GIT_PROMPT_SHOW_UPSTREAM' => ''
+    '__GIT_PROMPT_SHOW_UNTRACKED_FILES' => 'all'
+    'USER' => 'mikk'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_TELEPHONE' => 'et_EE.UTF-8'
+    'DESKTOP_AUTOSTART_ID' => '10dc78bccab633525c153484358187422500000042390003'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DEFAULTS_PATH' => '/usr/share/gconf/ubuntu.default.path'
+    'SESSION_MANAGER' => 'local/mikk-traffic:@/tmp/.ICE-unix/4239,unix/mikk-traffic:/tmp/.ICE-unix/4239'
+    'LIBVIRT_DEFAULT_URI' => 'qemu:///system'
+    'GIO_LAUNCHED_DESKTOP_FILE' => '/home/mikk/.config/autostart/guake.desktop'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg'
+    'DESKTOP_SESSION' => 'ubuntu'
+    'PATH' => '/home/mikk/.config/composer/vendor/bin:/home/mikk/bin:/home/mikk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'QT_IM_MODULE' => 'ibus'
+    'QT_QPA_PLATFORMTHEME' => 'appmenu-qt5'
+    'LC_IDENTIFICATION' => 'et_EE.UTF-8'
+    'XDG_SESSION_TYPE' => 'x11'
+    'PWD' => '/home/mikk/test/yii2-oauth2-server'
+    'JOB' => 'dbus'
+    'XMODIFIERS' => '@im=ibus'
+    'GNOME_KEYRING_PID' => ''
+    'LANG' => 'en_US.UTF-8'
+    'GDM_LANG' => 'en_US'
+    'MANDATORY_PATH' => '/usr/share/gconf/ubuntu.mandatory.path'
+    'LC_MEASUREMENT' => 'et_EE.UTF-8'
+    'COMPIZ_CONFIG_PROFILE' => 'ubuntu'
+    'IM_CONFIG_PHASE' => '1'
+    'GDMSESSION' => 'ubuntu'
+    'SESSIONTYPE' => 'gnome-session'
+    'GTK2_MODULES' => 'overlay-scrollbar'
+    'SHLVL' => '1'
+    'HOME' => '/home/mikk'
+    'XDG_SEAT' => 'seat0'
+    'LANGUAGE' => 'en_US'
+    'GIT_BRANCH' => 'add_tests'
+    '__GIT_PROMPT_SHOW_CHANGED_FILES_COUNT' => '1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'XDG_SESSION_DESKTOP' => 'ubuntu'
+    'LOGNAME' => 'mikk'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-ijw3vJ9dt2'
+    'XDG_DATA_DIRS' => '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop'
+    'QT4_IM_MODULE' => 'xim'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'GUAKE_TAB_UUID' => '7361a48a-f21a-479d-8062-b376a283df69'
+    'INSTANCE' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'XDG_CURRENT_DESKTOP' => 'Unity'
+    'GTK_IM_MODULE' => 'ibus'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'et_EE.UTF-8'
+    'LC_NAME' => 'et_EE.UTF-8'
+    'XAUTHORITY' => '/home/mikk/.Xauthority'
+    '_' => 'tests/_app/yii'
+    'PHP_SELF' => 'tests/_app/yii'
+    'SCRIPT_NAME' => 'tests/_app/yii'
+    'SCRIPT_FILENAME' => 'tests/_app/yii'
+    'PATH_TRANSLATED' => 'tests/_app/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534861848.4517
+    'REQUEST_TIME' => 1534861848
+    'argv' => [
+        0 => 'tests/_app/yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-08-21 14:37:43 [-][-][-][error][yii\base\InvalidArgumentException] exception 'yii\base\InvalidArgumentException' with message 'Invalid path alias: @conquer/oauth2/migrations' in /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/BaseYii.php:154
+Stack trace:
+#0 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(127): yii\BaseYii::getAlias('@conquer/oauth2...')
+#1 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/MigrateController.php(181): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Controller.php(155): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#3 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#4 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#5 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#6 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#7 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 /home/mikk/test/yii2-oauth2-server/tests/_app/yii(20): yii\base\Application->run()
+#9 {main}
+2018-08-21 14:37:43 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_VTNR' => '7'
+    'LC_PAPER' => 'et_EE.UTF-8'
+    '__GIT_PROMPT_IGNORE_STASH' => ''
+    'LC_ADDRESS' => 'et_EE.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/mikk'
+    'LC_MONETARY' => 'et_EE.UTF-8'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'SESSION' => 'ubuntu'
+    'GIO_LAUNCHED_DESKTOP_FILE_PID' => '4532'
+    'GPG_AGENT_INFO' => '/home/mikk/.gnupg/S.gpg-agent:0:1'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'et_EE.UTF-8'
+    'OLDPWD' => '/home/mikk/test'
+    'UPSTART_SESSION' => 'unix:abstract=/com/ubuntu/upstart-session/1000/3804'
+    'GNOME_KEYRING_CONTROL' => ''
+    'GTK_MODULES' => 'gail:atk-bridge:unity-gtk-module'
+    '__GIT_PROMPT_SHOW_UPSTREAM' => ''
+    '__GIT_PROMPT_SHOW_UNTRACKED_FILES' => 'all'
+    'USER' => 'mikk'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_TELEPHONE' => 'et_EE.UTF-8'
+    'DESKTOP_AUTOSTART_ID' => '10dc78bccab633525c153484358187422500000042390003'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DEFAULTS_PATH' => '/usr/share/gconf/ubuntu.default.path'
+    'SESSION_MANAGER' => 'local/mikk-traffic:@/tmp/.ICE-unix/4239,unix/mikk-traffic:/tmp/.ICE-unix/4239'
+    'LIBVIRT_DEFAULT_URI' => 'qemu:///system'
+    'GIO_LAUNCHED_DESKTOP_FILE' => '/home/mikk/.config/autostart/guake.desktop'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg'
+    'DESKTOP_SESSION' => 'ubuntu'
+    'PATH' => '/home/mikk/.config/composer/vendor/bin:/home/mikk/bin:/home/mikk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'QT_IM_MODULE' => 'ibus'
+    'QT_QPA_PLATFORMTHEME' => 'appmenu-qt5'
+    'LC_IDENTIFICATION' => 'et_EE.UTF-8'
+    'XDG_SESSION_TYPE' => 'x11'
+    'PWD' => '/home/mikk/test/yii2-oauth2-server'
+    'JOB' => 'dbus'
+    'XMODIFIERS' => '@im=ibus'
+    'GNOME_KEYRING_PID' => ''
+    'LANG' => 'en_US.UTF-8'
+    'GDM_LANG' => 'en_US'
+    'MANDATORY_PATH' => '/usr/share/gconf/ubuntu.mandatory.path'
+    'LC_MEASUREMENT' => 'et_EE.UTF-8'
+    'COMPIZ_CONFIG_PROFILE' => 'ubuntu'
+    'IM_CONFIG_PHASE' => '1'
+    'GDMSESSION' => 'ubuntu'
+    'SESSIONTYPE' => 'gnome-session'
+    'GTK2_MODULES' => 'overlay-scrollbar'
+    'SHLVL' => '1'
+    'HOME' => '/home/mikk'
+    'XDG_SEAT' => 'seat0'
+    'LANGUAGE' => 'en_US'
+    'GIT_BRANCH' => 'add_tests'
+    '__GIT_PROMPT_SHOW_CHANGED_FILES_COUNT' => '1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'XDG_SESSION_DESKTOP' => 'ubuntu'
+    'LOGNAME' => 'mikk'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-ijw3vJ9dt2'
+    'XDG_DATA_DIRS' => '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop'
+    'QT4_IM_MODULE' => 'xim'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'GUAKE_TAB_UUID' => '7361a48a-f21a-479d-8062-b376a283df69'
+    'INSTANCE' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'XDG_CURRENT_DESKTOP' => 'Unity'
+    'GTK_IM_MODULE' => 'ibus'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'et_EE.UTF-8'
+    'LC_NAME' => 'et_EE.UTF-8'
+    'XAUTHORITY' => '/home/mikk/.Xauthority'
+    '_' => 'tests/_app/yii'
+    'PHP_SELF' => 'tests/_app/yii'
+    'SCRIPT_NAME' => 'tests/_app/yii'
+    'SCRIPT_FILENAME' => 'tests/_app/yii'
+    'PATH_TRANSLATED' => 'tests/_app/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534862263.5736
+    'REQUEST_TIME' => 1534862263
+    'argv' => [
+        0 => 'tests/_app/yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-08-21 14:39:35 [-][-][-][error][yii\base\InvalidArgumentException] exception 'yii\base\InvalidArgumentException' with message 'Invalid path alias: @conquer/oauth2/migrations' in /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/BaseYii.php:154
+Stack trace:
+#0 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(127): yii\BaseYii::getAlias('@conquer/oauth2...')
+#1 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/MigrateController.php(181): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Controller.php(155): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#3 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#4 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#5 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#6 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#7 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 /home/mikk/test/yii2-oauth2-server/tests/_app/yii(20): yii\base\Application->run()
+#9 {main}
+2018-08-21 14:39:35 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_VTNR' => '7'
+    'LC_PAPER' => 'et_EE.UTF-8'
+    '__GIT_PROMPT_IGNORE_STASH' => ''
+    'LC_ADDRESS' => 'et_EE.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/mikk'
+    'LC_MONETARY' => 'et_EE.UTF-8'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'SESSION' => 'ubuntu'
+    'GIO_LAUNCHED_DESKTOP_FILE_PID' => '4532'
+    'GPG_AGENT_INFO' => '/home/mikk/.gnupg/S.gpg-agent:0:1'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'et_EE.UTF-8'
+    'OLDPWD' => '/home/mikk/test'
+    'UPSTART_SESSION' => 'unix:abstract=/com/ubuntu/upstart-session/1000/3804'
+    'GNOME_KEYRING_CONTROL' => ''
+    'GTK_MODULES' => 'gail:atk-bridge:unity-gtk-module'
+    '__GIT_PROMPT_SHOW_UPSTREAM' => ''
+    '__GIT_PROMPT_SHOW_UNTRACKED_FILES' => 'all'
+    'USER' => 'mikk'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_TELEPHONE' => 'et_EE.UTF-8'
+    'DESKTOP_AUTOSTART_ID' => '10dc78bccab633525c153484358187422500000042390003'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DEFAULTS_PATH' => '/usr/share/gconf/ubuntu.default.path'
+    'SESSION_MANAGER' => 'local/mikk-traffic:@/tmp/.ICE-unix/4239,unix/mikk-traffic:/tmp/.ICE-unix/4239'
+    'LIBVIRT_DEFAULT_URI' => 'qemu:///system'
+    'GIO_LAUNCHED_DESKTOP_FILE' => '/home/mikk/.config/autostart/guake.desktop'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg'
+    'DESKTOP_SESSION' => 'ubuntu'
+    'PATH' => '/home/mikk/.config/composer/vendor/bin:/home/mikk/bin:/home/mikk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'QT_IM_MODULE' => 'ibus'
+    'QT_QPA_PLATFORMTHEME' => 'appmenu-qt5'
+    'LC_IDENTIFICATION' => 'et_EE.UTF-8'
+    'XDG_SESSION_TYPE' => 'x11'
+    'PWD' => '/home/mikk/test/yii2-oauth2-server'
+    'JOB' => 'dbus'
+    'XMODIFIERS' => '@im=ibus'
+    'GNOME_KEYRING_PID' => ''
+    'LANG' => 'en_US.UTF-8'
+    'GDM_LANG' => 'en_US'
+    'MANDATORY_PATH' => '/usr/share/gconf/ubuntu.mandatory.path'
+    'LC_MEASUREMENT' => 'et_EE.UTF-8'
+    'COMPIZ_CONFIG_PROFILE' => 'ubuntu'
+    'IM_CONFIG_PHASE' => '1'
+    'GDMSESSION' => 'ubuntu'
+    'SESSIONTYPE' => 'gnome-session'
+    'GTK2_MODULES' => 'overlay-scrollbar'
+    'SHLVL' => '1'
+    'HOME' => '/home/mikk'
+    'XDG_SEAT' => 'seat0'
+    'LANGUAGE' => 'en_US'
+    'GIT_BRANCH' => 'add_tests'
+    '__GIT_PROMPT_SHOW_CHANGED_FILES_COUNT' => '1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'XDG_SESSION_DESKTOP' => 'ubuntu'
+    'LOGNAME' => 'mikk'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-ijw3vJ9dt2'
+    'XDG_DATA_DIRS' => '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop'
+    'QT4_IM_MODULE' => 'xim'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'GUAKE_TAB_UUID' => '7361a48a-f21a-479d-8062-b376a283df69'
+    'INSTANCE' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'XDG_CURRENT_DESKTOP' => 'Unity'
+    'GTK_IM_MODULE' => 'ibus'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'et_EE.UTF-8'
+    'LC_NAME' => 'et_EE.UTF-8'
+    'XAUTHORITY' => '/home/mikk/.Xauthority'
+    '_' => 'tests/_app/yii'
+    'PHP_SELF' => 'tests/_app/yii'
+    'SCRIPT_NAME' => 'tests/_app/yii'
+    'SCRIPT_FILENAME' => 'tests/_app/yii'
+    'PATH_TRANSLATED' => 'tests/_app/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534862375.1284
+    'REQUEST_TIME' => 1534862375
+    'argv' => [
+        0 => 'tests/_app/yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-08-21 14:39:39 [-][-][-][error][yii\base\InvalidArgumentException] exception 'yii\base\InvalidArgumentException' with message 'Invalid path alias: @conquer/oauth2/migrations' in /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/BaseYii.php:154
+Stack trace:
+#0 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(127): yii\BaseYii::getAlias('@conquer/oauth2...')
+#1 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/MigrateController.php(181): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Controller.php(155): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#3 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#4 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#5 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#6 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#7 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 /home/mikk/test/yii2-oauth2-server/tests/_app/yii(20): yii\base\Application->run()
+#9 {main}
+2018-08-21 14:39:39 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_VTNR' => '7'
+    'LC_PAPER' => 'et_EE.UTF-8'
+    '__GIT_PROMPT_IGNORE_STASH' => ''
+    'LC_ADDRESS' => 'et_EE.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/mikk'
+    'LC_MONETARY' => 'et_EE.UTF-8'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'SESSION' => 'ubuntu'
+    'GIO_LAUNCHED_DESKTOP_FILE_PID' => '4532'
+    'GPG_AGENT_INFO' => '/home/mikk/.gnupg/S.gpg-agent:0:1'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'et_EE.UTF-8'
+    'OLDPWD' => '/home/mikk/test'
+    'UPSTART_SESSION' => 'unix:abstract=/com/ubuntu/upstart-session/1000/3804'
+    'GNOME_KEYRING_CONTROL' => ''
+    'GTK_MODULES' => 'gail:atk-bridge:unity-gtk-module'
+    '__GIT_PROMPT_SHOW_UPSTREAM' => ''
+    '__GIT_PROMPT_SHOW_UNTRACKED_FILES' => 'all'
+    'USER' => 'mikk'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_TELEPHONE' => 'et_EE.UTF-8'
+    'DESKTOP_AUTOSTART_ID' => '10dc78bccab633525c153484358187422500000042390003'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DEFAULTS_PATH' => '/usr/share/gconf/ubuntu.default.path'
+    'SESSION_MANAGER' => 'local/mikk-traffic:@/tmp/.ICE-unix/4239,unix/mikk-traffic:/tmp/.ICE-unix/4239'
+    'LIBVIRT_DEFAULT_URI' => 'qemu:///system'
+    'GIO_LAUNCHED_DESKTOP_FILE' => '/home/mikk/.config/autostart/guake.desktop'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg'
+    'DESKTOP_SESSION' => 'ubuntu'
+    'PATH' => '/home/mikk/.config/composer/vendor/bin:/home/mikk/bin:/home/mikk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'QT_IM_MODULE' => 'ibus'
+    'QT_QPA_PLATFORMTHEME' => 'appmenu-qt5'
+    'LC_IDENTIFICATION' => 'et_EE.UTF-8'
+    'XDG_SESSION_TYPE' => 'x11'
+    'PWD' => '/home/mikk/test/yii2-oauth2-server'
+    'JOB' => 'dbus'
+    'XMODIFIERS' => '@im=ibus'
+    'GNOME_KEYRING_PID' => ''
+    'LANG' => 'en_US.UTF-8'
+    'GDM_LANG' => 'en_US'
+    'MANDATORY_PATH' => '/usr/share/gconf/ubuntu.mandatory.path'
+    'LC_MEASUREMENT' => 'et_EE.UTF-8'
+    'COMPIZ_CONFIG_PROFILE' => 'ubuntu'
+    'IM_CONFIG_PHASE' => '1'
+    'GDMSESSION' => 'ubuntu'
+    'SESSIONTYPE' => 'gnome-session'
+    'GTK2_MODULES' => 'overlay-scrollbar'
+    'SHLVL' => '1'
+    'HOME' => '/home/mikk'
+    'XDG_SEAT' => 'seat0'
+    'LANGUAGE' => 'en_US'
+    'GIT_BRANCH' => 'add_tests'
+    '__GIT_PROMPT_SHOW_CHANGED_FILES_COUNT' => '1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'XDG_SESSION_DESKTOP' => 'ubuntu'
+    'LOGNAME' => 'mikk'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-ijw3vJ9dt2'
+    'XDG_DATA_DIRS' => '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop'
+    'QT4_IM_MODULE' => 'xim'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'GUAKE_TAB_UUID' => '7361a48a-f21a-479d-8062-b376a283df69'
+    'INSTANCE' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'XDG_CURRENT_DESKTOP' => 'Unity'
+    'GTK_IM_MODULE' => 'ibus'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'et_EE.UTF-8'
+    'LC_NAME' => 'et_EE.UTF-8'
+    'XAUTHORITY' => '/home/mikk/.Xauthority'
+    '_' => 'tests/_app/yii'
+    'PHP_SELF' => 'tests/_app/yii'
+    'SCRIPT_NAME' => 'tests/_app/yii'
+    'SCRIPT_FILENAME' => 'tests/_app/yii'
+    'PATH_TRANSLATED' => 'tests/_app/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534862379.5679
+    'REQUEST_TIME' => 1534862379
+    'argv' => [
+        0 => 'tests/_app/yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-08-21 14:40:05 [-][-][-][error][yii\base\InvalidArgumentException] exception 'yii\base\InvalidArgumentException' with message 'Invalid path alias: @conquer/oauth2/migrations' in /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/BaseYii.php:154
+Stack trace:
+#0 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(127): yii\BaseYii::getAlias('@conquer/oauth2...')
+#1 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/MigrateController.php(181): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Controller.php(155): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#3 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#4 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#5 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#6 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#7 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 /home/mikk/test/yii2-oauth2-server/tests/_app/yii(20): yii\base\Application->run()
+#9 {main}
+2018-08-21 14:40:05 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_VTNR' => '7'
+    'LC_PAPER' => 'et_EE.UTF-8'
+    '__GIT_PROMPT_IGNORE_STASH' => ''
+    'LC_ADDRESS' => 'et_EE.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/mikk'
+    'LC_MONETARY' => 'et_EE.UTF-8'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'SESSION' => 'ubuntu'
+    'GIO_LAUNCHED_DESKTOP_FILE_PID' => '4532'
+    'GPG_AGENT_INFO' => '/home/mikk/.gnupg/S.gpg-agent:0:1'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'et_EE.UTF-8'
+    'OLDPWD' => '/home/mikk/test'
+    'UPSTART_SESSION' => 'unix:abstract=/com/ubuntu/upstart-session/1000/3804'
+    'GNOME_KEYRING_CONTROL' => ''
+    'GTK_MODULES' => 'gail:atk-bridge:unity-gtk-module'
+    '__GIT_PROMPT_SHOW_UPSTREAM' => ''
+    '__GIT_PROMPT_SHOW_UNTRACKED_FILES' => 'all'
+    'USER' => 'mikk'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_TELEPHONE' => 'et_EE.UTF-8'
+    'DESKTOP_AUTOSTART_ID' => '10dc78bccab633525c153484358187422500000042390003'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DEFAULTS_PATH' => '/usr/share/gconf/ubuntu.default.path'
+    'SESSION_MANAGER' => 'local/mikk-traffic:@/tmp/.ICE-unix/4239,unix/mikk-traffic:/tmp/.ICE-unix/4239'
+    'LIBVIRT_DEFAULT_URI' => 'qemu:///system'
+    'GIO_LAUNCHED_DESKTOP_FILE' => '/home/mikk/.config/autostart/guake.desktop'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg'
+    'DESKTOP_SESSION' => 'ubuntu'
+    'PATH' => '/home/mikk/.config/composer/vendor/bin:/home/mikk/bin:/home/mikk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'QT_IM_MODULE' => 'ibus'
+    'QT_QPA_PLATFORMTHEME' => 'appmenu-qt5'
+    'LC_IDENTIFICATION' => 'et_EE.UTF-8'
+    'XDG_SESSION_TYPE' => 'x11'
+    'PWD' => '/home/mikk/test/yii2-oauth2-server'
+    'JOB' => 'dbus'
+    'XMODIFIERS' => '@im=ibus'
+    'GNOME_KEYRING_PID' => ''
+    'LANG' => 'en_US.UTF-8'
+    'GDM_LANG' => 'en_US'
+    'MANDATORY_PATH' => '/usr/share/gconf/ubuntu.mandatory.path'
+    'LC_MEASUREMENT' => 'et_EE.UTF-8'
+    'COMPIZ_CONFIG_PROFILE' => 'ubuntu'
+    'IM_CONFIG_PHASE' => '1'
+    'GDMSESSION' => 'ubuntu'
+    'SESSIONTYPE' => 'gnome-session'
+    'GTK2_MODULES' => 'overlay-scrollbar'
+    'SHLVL' => '1'
+    'HOME' => '/home/mikk'
+    'XDG_SEAT' => 'seat0'
+    'LANGUAGE' => 'en_US'
+    'GIT_BRANCH' => 'add_tests'
+    '__GIT_PROMPT_SHOW_CHANGED_FILES_COUNT' => '1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'XDG_SESSION_DESKTOP' => 'ubuntu'
+    'LOGNAME' => 'mikk'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-ijw3vJ9dt2'
+    'XDG_DATA_DIRS' => '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop'
+    'QT4_IM_MODULE' => 'xim'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'GUAKE_TAB_UUID' => '7361a48a-f21a-479d-8062-b376a283df69'
+    'INSTANCE' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'XDG_CURRENT_DESKTOP' => 'Unity'
+    'GTK_IM_MODULE' => 'ibus'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'et_EE.UTF-8'
+    'LC_NAME' => 'et_EE.UTF-8'
+    'XAUTHORITY' => '/home/mikk/.Xauthority'
+    '_' => 'tests/_app/yii'
+    'PHP_SELF' => 'tests/_app/yii'
+    'SCRIPT_NAME' => 'tests/_app/yii'
+    'SCRIPT_FILENAME' => 'tests/_app/yii'
+    'PATH_TRANSLATED' => 'tests/_app/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534862405.0535
+    'REQUEST_TIME' => 1534862405
+    'argv' => [
+        0 => 'tests/_app/yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-08-21 15:00:50 [-][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'app\controllers\OauthController' in file: /home/mikk/test/yii2-oauth2-server/tests/_app/controllers/OauthController.php. Namespace missing?' in /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/BaseYii.php:300
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(280): class_exists('app\\controllers...')
+#3 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(258): yii\console\controllers\HelpController->validateControllerClass('app\\controllers...')
+#4 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(175): yii\console\controllers\HelpController->getModuleCommands(Object(yii\console\Application))
+#5 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(187): yii\console\controllers\HelpController->getCommands()
+#6 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(293): yii\console\controllers\HelpController->getCommandDescriptions()
+#7 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(67): yii\console\controllers\HelpController->getDefaultHelp()
+#8 [internal function]: yii\console\controllers\HelpController->actionIndex(NULL)
+#9 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#12 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#13 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('', Array)
+#14 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('', Array)
+#15 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/mikk/test/yii2-oauth2-server/tests/_app/yii(20): yii\base\Application->run()
+#17 {main}
+2018-08-21 15:00:50 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_VTNR' => '7'
+    'LC_PAPER' => 'et_EE.UTF-8'
+    '__GIT_PROMPT_IGNORE_STASH' => ''
+    'LC_ADDRESS' => 'et_EE.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/mikk'
+    'LC_MONETARY' => 'et_EE.UTF-8'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'SESSION' => 'ubuntu'
+    'GIO_LAUNCHED_DESKTOP_FILE_PID' => '4532'
+    'GPG_AGENT_INFO' => '/home/mikk/.gnupg/S.gpg-agent:0:1'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'et_EE.UTF-8'
+    'OLDPWD' => '/home/mikk/test'
+    'UPSTART_SESSION' => 'unix:abstract=/com/ubuntu/upstart-session/1000/3804'
+    'GNOME_KEYRING_CONTROL' => ''
+    'GTK_MODULES' => 'gail:atk-bridge:unity-gtk-module'
+    '__GIT_PROMPT_SHOW_UPSTREAM' => ''
+    '__GIT_PROMPT_SHOW_UNTRACKED_FILES' => 'all'
+    'USER' => 'mikk'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_TELEPHONE' => 'et_EE.UTF-8'
+    'DESKTOP_AUTOSTART_ID' => '10dc78bccab633525c153484358187422500000042390003'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DEFAULTS_PATH' => '/usr/share/gconf/ubuntu.default.path'
+    'SESSION_MANAGER' => 'local/mikk-traffic:@/tmp/.ICE-unix/4239,unix/mikk-traffic:/tmp/.ICE-unix/4239'
+    'LIBVIRT_DEFAULT_URI' => 'qemu:///system'
+    'GIO_LAUNCHED_DESKTOP_FILE' => '/home/mikk/.config/autostart/guake.desktop'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg'
+    'DESKTOP_SESSION' => 'ubuntu'
+    'PATH' => '/home/mikk/.config/composer/vendor/bin:/home/mikk/bin:/home/mikk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'QT_IM_MODULE' => 'ibus'
+    'QT_QPA_PLATFORMTHEME' => 'appmenu-qt5'
+    'LC_IDENTIFICATION' => 'et_EE.UTF-8'
+    'XDG_SESSION_TYPE' => 'x11'
+    'PWD' => '/home/mikk/test/yii2-oauth2-server'
+    'JOB' => 'dbus'
+    'XMODIFIERS' => '@im=ibus'
+    'GNOME_KEYRING_PID' => ''
+    'LANG' => 'en_US.UTF-8'
+    'GDM_LANG' => 'en_US'
+    'MANDATORY_PATH' => '/usr/share/gconf/ubuntu.mandatory.path'
+    'LC_MEASUREMENT' => 'et_EE.UTF-8'
+    'COMPIZ_CONFIG_PROFILE' => 'ubuntu'
+    'IM_CONFIG_PHASE' => '1'
+    'GDMSESSION' => 'ubuntu'
+    'SESSIONTYPE' => 'gnome-session'
+    'GTK2_MODULES' => 'overlay-scrollbar'
+    'SHLVL' => '1'
+    'HOME' => '/home/mikk'
+    'XDG_SEAT' => 'seat0'
+    'LANGUAGE' => 'en_US'
+    'GIT_BRANCH' => 'add_tests'
+    '__GIT_PROMPT_SHOW_CHANGED_FILES_COUNT' => '1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'XDG_SESSION_DESKTOP' => 'ubuntu'
+    'LOGNAME' => 'mikk'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-ijw3vJ9dt2'
+    'XDG_DATA_DIRS' => '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop'
+    'QT4_IM_MODULE' => 'xim'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'GUAKE_TAB_UUID' => '7361a48a-f21a-479d-8062-b376a283df69'
+    'INSTANCE' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'XDG_CURRENT_DESKTOP' => 'Unity'
+    'GTK_IM_MODULE' => 'ibus'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'et_EE.UTF-8'
+    'LC_NAME' => 'et_EE.UTF-8'
+    'XAUTHORITY' => '/home/mikk/.Xauthority'
+    '_' => 'tests/_app/yii'
+    'PHP_SELF' => 'tests/_app/yii'
+    'SCRIPT_NAME' => 'tests/_app/yii'
+    'SCRIPT_FILENAME' => 'tests/_app/yii'
+    'PATH_TRANSLATED' => 'tests/_app/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534863650.8333
+    'REQUEST_TIME' => 1534863650
+    'argv' => [
+        0 => 'tests/_app/yii'
+    ]
+    'argc' => 1
+]
+2018-08-21 15:05:38 [-][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'app\controllers\OauthController' in file: /home/mikk/test/yii2-oauth2-server/tests/_app/controllers/OauthController.php. Namespace missing?' in /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/BaseYii.php:300
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(280): class_exists('app\\controllers...')
+#3 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(258): yii\console\controllers\HelpController->validateControllerClass('app\\controllers...')
+#4 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(175): yii\console\controllers\HelpController->getModuleCommands(Object(yii\console\Application))
+#5 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(187): yii\console\controllers\HelpController->getCommands()
+#6 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(293): yii\console\controllers\HelpController->getCommandDescriptions()
+#7 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/controllers/HelpController.php(67): yii\console\controllers\HelpController->getDefaultHelp()
+#8 [internal function]: yii\console\controllers\HelpController->actionIndex(NULL)
+#9 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#12 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#13 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('', Array)
+#14 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('', Array)
+#15 /home/mikk/test/yii2-oauth2-server/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /home/mikk/test/yii2-oauth2-server/tests/_app/yii(20): yii\base\Application->run()
+#17 {main}
+2018-08-21 15:05:38 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_VTNR' => '7'
+    'LC_PAPER' => 'et_EE.UTF-8'
+    '__GIT_PROMPT_IGNORE_STASH' => ''
+    'LC_ADDRESS' => 'et_EE.UTF-8'
+    'XDG_SESSION_ID' => 'c2'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/mikk'
+    'LC_MONETARY' => 'et_EE.UTF-8'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'SESSION' => 'ubuntu'
+    'GIO_LAUNCHED_DESKTOP_FILE_PID' => '4532'
+    'GPG_AGENT_INFO' => '/home/mikk/.gnupg/S.gpg-agent:0:1'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'et_EE.UTF-8'
+    'OLDPWD' => '/home/mikk/test'
+    'UPSTART_SESSION' => 'unix:abstract=/com/ubuntu/upstart-session/1000/3804'
+    'GNOME_KEYRING_CONTROL' => ''
+    'GTK_MODULES' => 'gail:atk-bridge:unity-gtk-module'
+    '__GIT_PROMPT_SHOW_UPSTREAM' => ''
+    '__GIT_PROMPT_SHOW_UNTRACKED_FILES' => 'all'
+    'USER' => 'mikk'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_TELEPHONE' => 'et_EE.UTF-8'
+    'DESKTOP_AUTOSTART_ID' => '10dc78bccab633525c153484358187422500000042390003'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DEFAULTS_PATH' => '/usr/share/gconf/ubuntu.default.path'
+    'SESSION_MANAGER' => 'local/mikk-traffic:@/tmp/.ICE-unix/4239,unix/mikk-traffic:/tmp/.ICE-unix/4239'
+    'LIBVIRT_DEFAULT_URI' => 'qemu:///system'
+    'GIO_LAUNCHED_DESKTOP_FILE' => '/home/mikk/.config/autostart/guake.desktop'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg'
+    'DESKTOP_SESSION' => 'ubuntu'
+    'PATH' => '/home/mikk/.config/composer/vendor/bin:/home/mikk/bin:/home/mikk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'QT_IM_MODULE' => 'ibus'
+    'QT_QPA_PLATFORMTHEME' => 'appmenu-qt5'
+    'LC_IDENTIFICATION' => 'et_EE.UTF-8'
+    'XDG_SESSION_TYPE' => 'x11'
+    'PWD' => '/home/mikk/test/yii2-oauth2-server'
+    'JOB' => 'dbus'
+    'XMODIFIERS' => '@im=ibus'
+    'GNOME_KEYRING_PID' => ''
+    'LANG' => 'en_US.UTF-8'
+    'GDM_LANG' => 'en_US'
+    'MANDATORY_PATH' => '/usr/share/gconf/ubuntu.mandatory.path'
+    'LC_MEASUREMENT' => 'et_EE.UTF-8'
+    'COMPIZ_CONFIG_PROFILE' => 'ubuntu'
+    'IM_CONFIG_PHASE' => '1'
+    'GDMSESSION' => 'ubuntu'
+    'SESSIONTYPE' => 'gnome-session'
+    'GTK2_MODULES' => 'overlay-scrollbar'
+    'SHLVL' => '1'
+    'HOME' => '/home/mikk'
+    'XDG_SEAT' => 'seat0'
+    'LANGUAGE' => 'en_US'
+    'GIT_BRANCH' => 'add_tests'
+    '__GIT_PROMPT_SHOW_CHANGED_FILES_COUNT' => '1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'XDG_SESSION_DESKTOP' => 'ubuntu'
+    'LOGNAME' => 'mikk'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-ijw3vJ9dt2'
+    'XDG_DATA_DIRS' => '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop'
+    'QT4_IM_MODULE' => 'xim'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'GUAKE_TAB_UUID' => '7361a48a-f21a-479d-8062-b376a283df69'
+    'INSTANCE' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'XDG_CURRENT_DESKTOP' => 'Unity'
+    'GTK_IM_MODULE' => 'ibus'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'et_EE.UTF-8'
+    'LC_NAME' => 'et_EE.UTF-8'
+    'XAUTHORITY' => '/home/mikk/.Xauthority'
+    '_' => 'tests/_app/yii'
+    'PHP_SELF' => 'tests/_app/yii'
+    'SCRIPT_NAME' => 'tests/_app/yii'
+    'SCRIPT_FILENAME' => 'tests/_app/yii'
+    'PATH_TRANSLATED' => 'tests/_app/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534863938.2518
+    'REQUEST_TIME' => 1534863938
+    'argv' => [
+        0 => 'tests/_app/yii'
+    ]
+    'argc' => 1
+]
