@@ -8,6 +8,7 @@
 actor: FunctionalTester
 modules:
     enabled:
+        - oauth\tests\RedirectHelper
         - Yii2:
             configFile: 'tests/_app/config/web.php'
         # add a framework module here

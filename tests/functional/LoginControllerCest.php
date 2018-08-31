@@ -85,10 +85,15 @@ class LoginControllerCest
     }
 
     public function testLoggingInWithCorrectPassword(FunctionalTester $I)
-   {
+    {
+        $I->followRedirects(false);
         $I->amOnRoute('oauth', ['response_type' => 'code', 'client_id' => 'existing', 'redirect_uri' => 'https://example.org/']);
         $I->fillField('LoginForm[username]', 'correct');
         $I->fillField('LoginForm[password]', 'correct');
         $I->click('Login');
+
+        $I->seeResponseCodeIs(302);
+
+        $I->seeHeaderContains('location', 'https://example.org/?code=');
     }
 }
