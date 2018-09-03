@@ -6,7 +6,7 @@ php:
   - '7.2'
 
 before_install:
-  - mysql -e 'CREATE DATABASE myapp_test;'
+  - mysql -e 'CREATE DATABASE test_oauth;'
 
 install:
     - composer install --no-interaction
@@ -14,3 +14,4 @@ install:
 
 script:
     - vendor/bin/phpcs --standard=vendor/yiisoft/yii2-coding-standards/Yii2 --extensions=php --ignore=vendor,granttypes/RefreshToken.php .
+    - vendor/bin/codecept run
