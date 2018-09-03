@@ -20,9 +20,9 @@ return [
         ],
         'db' => [
             'class' => '\yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=test_oauth',
-            'username' => 'testuser',
-            'password' => '12345678',
+            'dsn' => 'mysql:host=mysql;dbname=test_oauth',
+            'username' => 'root',
+            'password' => '',
             'charset' => 'utf8',
         ],
     ]
