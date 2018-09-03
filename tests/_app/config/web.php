@@ -16,5 +16,8 @@ return ArrayHelper::merge(require 'test.php', [
         'user' => [
             'identityClass' => 'yiiacceptance\models\User',
         ],
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+        ]
     ]
 ]);

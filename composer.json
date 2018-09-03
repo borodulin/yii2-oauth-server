@@ -25,6 +25,7 @@
         "yiisoft/yii2-coding-standards": "~2.0.3",
 
         "codeception/codeception": "^2.4",
+        "flow/jsonpath": "*",
         "codeception/phpbuiltinserver": "^1.4"
     },
     "autoload": {
