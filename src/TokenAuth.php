@@ -11,9 +11,9 @@ use conquer\oauth2\models\AccessToken;
 use Yii;
 use yii\base\Controller;
 use yii\filters\auth\AuthMethod;
+use yii\web\IdentityInterface;
 use yii\web\Response;
 use yii\web\UnauthorizedHttpException;
-use yii\web\IdentityInterface;
 
 /**
  * TokenAuth is an action filter that supports the authentication method based on the OAuth2 Access Token.
@@ -67,7 +67,7 @@ class TokenAuth extends AuthMethod
     {
         $accessToken = $this->getAccessToken();
 
-        if ($this->checkScopes($this->scopes, $accessToken->scope)) {
+        if (!$this->checkScopes($this->scopes, $accessToken->scope)) {
             throw new UnauthorizedHttpException();
         }
 
